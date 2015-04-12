@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        
+        android:background="@drawable/pre"
+        android:onClick="pre" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/nxt"
+        android:onClick="nxt"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button1" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@+id/spinner1" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/spinner2" />
+
+    <com.WsCube.Drawing.DrawingView
+        android:id="@+id/drawingView3"
+        android:layout_width="265dp"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/drawingView4" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/button2"
+        android:background="@drawable/fb"
+        android:onClick="fb" />
+
+    <com.WsCube.Drawing.DrawingView
+        android:id="@+id/drawingView4"
+        android:layout_width="265dp"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/drawingView3" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignTop="@+id/drawingView3"
+        android:layout_marginLeft="54dp"
+        android:text="Join the numbers" 
+        android:textColor="@color/blue"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/drawingView4"
+        android:layout_toLeftOf="@+id/button3"
+        android:text="Draw Yourself" 
+        android:textColor="@color/blue"/>
+
+</RelativeLayout>
